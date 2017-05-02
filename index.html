@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dobro.space.com</title>
+    <link rel="icon" type="image/png" href="img/bitcoin.png" />
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Меню <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">DOBRO.SPACE</a>
+            </div>
+
+            <!-- Small menu -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll fonts" href="#page-top">Главная</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll fonts" href="#about">Тарифные планы</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll fonts" href="#portfolio">Личный кабинет</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll fonts" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading" class="fonts">Мы привлекаем деньги на совершение добрых дел и добрые дела не остануться <br> в долгу - платят девиденты</h1>
+                <hr>
+                <p></p>
+                <a href="#" class="btn btn-primary btn-xl page-scroll fonts" data-toggle="modal" data-target="#myModal">НАЧАТЬ СВЕРШАТЬ ДОБРЫЕ ДЕЛА</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div id="logins" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="fonts">Вход в Личный кабинет</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class=" col-sm-8 col-sm-offset-2">
+                        <form action="/login" method="post" id="signinForm">
+                            <div class="form-group text-left fonts">
+                                <label for="login3">Логин:</label>
+                                <input type="login" class="form-control" name="login3" id=login3>
+                            </div>
+
+                            <div class="form-group text-left fonts">
+                                <label for="password3">Пароль:</label>
+                                <input type="password" class="form-control" name="password3" id="password3">
+                                <div id='err'></div>
+                            </div>
+                            <div class="row">
+                                <a class="btn btn-default1 fonts" data-dismiss="modal" data-toggle="modal" data-target="#forgot">Забыли пароль</a>
+                                <button type="submit" class="btn btn-primary fonts" id="signin">Вход в лк</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="fonts">Регистрация</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class=" col-sm-8 col-sm-offset-2">
+                        <form action="/register" method="post" id="signupForm">
+
+                            <div class="form-group text-left">
+                                <label for="email">Емеил:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="емеил нельзя будет изменить">
+                            </div>
+
+                            <div class="form-group text-left">
+                                <label for="username">Логин:</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="логин нельзя будет изменить">
+                            </div>
+
+                            <div class="form-group text-left">
+                                <label for="pin">Пин код:</label>
+                                <input type="password" class="form-control" id="pin" name="pin" placeholder="пин код нельзя будет изменить">
+                            </div>
+
+                            <div class="form-group text-left">
+                                <label for="password text-left">Пароль:</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+
+                            <div class="form-group text-left">
+                                <label for="password2">Подтвердите пароль:</label>
+                                <input type="password" class="form-control" id="password2" name="password2">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary fonts">Регистрация</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgot" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="fonts">Востановление аккаунта</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class=" col-sm-8 col-sm-offset-2">
+                        <form action="/restore" method="post" id='forgotpassword'>
+
+                            <div class="form-group fonts text-left">
+                                <label for="emailes">Емеил:</label>
+                                <input type="email" class="form-control" id="emailes" name="emailes">
+                            </div>
+
+                            <div class="form-group fonts text-left">
+                                <label for="logines">Логин:</label>
+                                <input type="login" class="form-control" id="logines" name="logines">
+                            </div>
+
+                            <button type="submit" class="btn btn-default1 fonts">Востановить пароль</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <h5 class="fonts text-center" style="color: #F05F40;">Ожидайте ответа на вашу почту. Если вы не смогли вспомнить логин или пароль тогда напишите нам почту </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading fonts">Величина ДОБРЫХ ДЕЛ</h2>
+                    <hr class="light">
+                    <div class="col-md-4 location">
+                        <p>От 0.01 Btc до 0.1 Btc</p>
+                        <hr id="underLine">
+                        <p>1% в день</p>
+                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button fonts" data-toggle="modal" data-target="#myModal">Начать делать добро!</a>
+                    </div>
+                    <div class="col-md-4 location" id="position">
+                        <p>От 0.1 Btc до 1 Btc</p>
+                        <hr id="underLine">
+                        <p>1.5% в день</p>
+                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button fonts" data-toggle="modal" data-target="#myModal">Начать делать добро!</a>
+                    </div>
+                    <div class="col-md-4 location">
+                        <p>От 1 Btc до &#8734;</p>
+                        <hr id="underLine">
+                        <p>2% в день</p>
+                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button fonts" data-toggle="modal" data-target="#myModal">Начать делать добро!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <aside class="bg-dark">
+        <div class="container text-center" id="choice">
+            <section class="no-padding" id="portfolio">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <h2 class="section-heading fonts">Личный кабинет</h2>
+                            <hr class="primary">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2 text-center" id="mail">
+                    <img src="img/login.jpg" class="img-responsive">
+                    <h2 id="login">Вход в ЛК для свершение добрых дел!</h2>
+                    <a href="#" class="btn btn-default btn-xl sr-button" id="sgi" data-toggle="modal" data-target="#logins">Войти в ЛК</a>
+                </div>
+                <div class="col-lg-4 col-lg-offset-0 text-center" id="mail">
+                    <img src="img/create.jpeg" class="img-responsive">
+                    <h2 id="register">Создайте свой ЛК для свершение добрых дел!</h2>
+                    <a href="#" class="btn btn-default btn-xl sr-button" id="sgu" data-toggle="modal" data-target="#myModal">Зарегистрироватся</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading fonts">Наши контакты</h2>
+                    <hr class="primary">
+                    <p>Bla-bla-bla Bla-bla-bla Bla-bla-bla Bla-bla-bla! Bla-bla-bla Bla-bla-bla Bla-bla-bla Bla-bla-bla Bla-bla-bla Bla-bla-bla Bla-bla-bla Bla-bla-bla!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center" id="mail">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:technic.dobro@gmail.com">technic.dobro@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
